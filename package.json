@@ -1,0 +1,19 @@
+{
+  "name": "packadge.json",
+  "version": "1.0.0",
+  "description": "OC P3 ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminBelardi/BenjaminBelardi_3_15042021.git"
+  },
+  "author": "benjamin belardi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaminBelardi/BenjaminBelardi_3_15042021/issues"
+  },
+  "homepage": "https://github.com/BenjaminBelardi/BenjaminBelardi_3_15042021#readme"
+}
