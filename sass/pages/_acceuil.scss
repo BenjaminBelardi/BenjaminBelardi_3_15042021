@@ -1,1 +1,12 @@
 
+.search
+{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#c3c3c3 ;
+    &__icon{
+        margin-right: .5rem;
+    }
+}
