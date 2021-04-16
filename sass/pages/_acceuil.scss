@@ -1,12 +1,66 @@
 
-.search
-{
+.search{
     height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#c3c3c3 ;
+    background-color:#eaeaea ;
+    padding: 0.5rem;
     &__icon{
         margin-right: .5rem;
     }
 }
+.search-result{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:2.5rem;
+    &__title{
+        margin: 0 2rem 0.5rem 2rem;
+    }
+    &__subtitle{
+        margin: 0.5rem 2rem 0.5rem 2rem;
+        font-size: 0.8rem;
+    }
+}
+.instructions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4.2rem;
+    &__title{
+        margin: 0.4rem;
+    }
+    &__box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 1.8rem;
+        background-color: #f6f6f6;
+        margin: .5rem 1.25rem .5rem 2rem;
+        height: 5rem;
+        align-items: center;
+    }
+    &__stage{
+        display: flex;
+        position: relative;
+        left:-10px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: $color_primary;
+        
+        color: white;
+        font-size: 0.8rem;
+        align-items: center;
+        justify-content: center;
+    }
+    &__label{
+         margin-left: 1.2rem;
+         
+        }
+    &__icon{
+        color: gray;
+    }
+}
+

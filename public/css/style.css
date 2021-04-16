@@ -3,38 +3,55 @@
   padding: 0;
 }
 
-/*  EXEMPLE
 body {
-    font-family: 'Roboto', sans-serif;
-    color: $colour-primary;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.7;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 5rem;
-    font-style: italic;
+header, h1, h2 {
+  font-family: "shrihand", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-textarea {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 2rem;
+h3 {
+  font-family: "shrihand", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  color: gray;
 }
 
 button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 2.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
-*/
+
+#search-area {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  width: 40%;
+  font-weight: 600;
+  outline: none;
+}
+
+.btn {
+  padding: 1rem;
+  border: unset;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem #d3d3d3;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  color: white;
+  outline: none;
+  margin: 2rem;
+}
+
 .header {
   width: 100%;
-  height: 10vh;
+  height: 5rem;
 }
 .header__logo {
   display: flex;
@@ -48,10 +65,64 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c3c3c3;
+  background-color: #eaeaea;
+  padding: 0.5rem;
 }
 .search__icon {
   margin-right: 0.5rem;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.search-result__title {
+  margin: 0 2rem 0.5rem 2rem;
+}
+.search-result__subtitle {
+  margin: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 0.8rem;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4.2rem;
+}
+.instructions__title {
+  margin: 0.4rem;
+}
+.instructions__box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 1.8rem;
+  background-color: #f6f6f6;
+  margin: 0.5rem 1.25rem 0.5rem 2rem;
+  height: 5rem;
+  align-items: center;
+}
+.instructions__stage {
+  display: flex;
+  position: relative;
+  left: -10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.instructions__label {
+  margin-left: 1.2rem;
+}
+.instructions__icon {
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */

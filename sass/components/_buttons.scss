@@ -1,0 +1,10 @@
+.btn{
+    padding: 1rem;
+    border: unset;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem $color_shadow ;
+    background: linear-gradient(175deg,$color_secondary,$color_primary);
+    color: white;
+    outline: none;
+    margin: 2rem;
+}
