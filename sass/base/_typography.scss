@@ -40,6 +40,11 @@ a{
     &__link--color{
         color: black;
     }
+    &__new{
+        font-size: .9rem;
+        font-weight: 700;
+        color: darken($color_tertiary, 35%);
+    }
 }
 
 .footer{

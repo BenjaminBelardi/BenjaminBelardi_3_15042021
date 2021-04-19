@@ -1,3 +1,11 @@
+@keyframes heart {
+  0% {
+    bacground-color: blue;
+  }
+  100% {
+    bacground-color: blue;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +50,11 @@ a {
 }
 .restaurant__card__link--color {
   color: black;
+}
+.restaurant__card__new {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2c9c81;
 }
 
 .footer {
@@ -220,6 +233,17 @@ a {
   object-fit: cover;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
+}
+.restaurant__card__new {
+  position: relative;
+  top: -250px;
+  right: -250px;
+  width: 4rem;
+  padding: 0.4rem;
+  text-align: center;
+  z-index: 1;
+  border-radius: 2px;
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

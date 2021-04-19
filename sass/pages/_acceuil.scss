@@ -106,5 +106,17 @@
             border-top-left-radius: 0.8rem;
             border-top-right-radius: 0.8rem;
         }
+        &__new{
+            position:relative;
+            top:-250px;
+            right: -250px;
+            width: 4rem;
+            padding: 0.4rem;
+            text-align: center;
+            z-index: 1;
+            border-radius: 2px;
+            background-color: $color_tertiary;
+
+        }
     }
 }
