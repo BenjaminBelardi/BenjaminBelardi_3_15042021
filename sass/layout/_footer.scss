@@ -1,0 +1,24 @@
+.footer__main{
+    background-color: $color_footer;
+    height: 12.5rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.25rem;
+    &__logo{
+        margin-bottom: -0.2rem;
+    }
+    &__link-container{
+        margin-top: 1rem;
+        display: block;
+    }
+    &__link{
+        margin-top: 0.5rem;
+        &__icon-cutlery,&__icon-partner{
+            margin-right: 0.5rem;
+        }
+    }
+}
