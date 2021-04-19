@@ -1,11 +1,4 @@
-@keyframes heart {
-  0% {
-    bacground-color: blue;
-  }
-  100% {
-    bacground-color: blue;
-  }
-}
+@keyframes heart {}
 * {
   margin: 0;
   padding: 0;
