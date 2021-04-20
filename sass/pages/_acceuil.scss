@@ -77,6 +77,7 @@
     }
     &__card{
         display: flex;
+        position: relative;
         height: 15.5rem;
         background-color: white;
         border-radius: 1rem;
@@ -107,9 +108,9 @@
             border-top-right-radius: 0.8rem;
         }
         &__new{
-            position:relative;
-            top:-250px;
-            right: -250px;
+            position:absolute;
+            top:15px;
+            right: 15px;
             width: 4rem;
             padding: 0.4rem;
             text-align: center;
