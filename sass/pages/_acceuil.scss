@@ -1,6 +1,6 @@
 
 .search{
-    height: 5vh;
+    height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top:2.5rem;
+    margin-top:2rem;
     &__title{
         margin: 0 2rem 0.5rem 2rem;
     }
@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 4.2rem;
+    margin-top: 5.4rem;
     &__title{
         margin: 0.4rem;
     }
@@ -85,14 +85,11 @@
         margin-top: 1rem;
         &__info{
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: space-between;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
             margin: 1rem;
             height: 25%;
-        }
-        &__icon-like{
-            font-size: 1.5rem;
         }
         & a{
             display: flex;
@@ -120,4 +117,7 @@
 
         }
     }
+}
+.icon-like{
+    padding-top: 1.3rem;
 }

@@ -1,8 +1,11 @@
-.footer__main{
+.footer-main{
     background-color: $color_footer;
     height: 12.5rem;
+    &.footer-position{
+        position: relative;
+        top: 220px;
+    }
 }
-
 .footer{
     display: flex;
     flex-direction: column;

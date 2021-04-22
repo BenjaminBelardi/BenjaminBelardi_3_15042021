@@ -1,26 +1,70 @@
 .banner__img{
+    position: absolute;
 
-   height: 260px; 
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
 }
 .menu{
-    position: absolute;
-    top: 290px;
+    position: relative;
+    top: 220px;
     width: 100%;
     background-color: #f6f6f6;
-    border-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-bottom: 40px;
     &__restaurant{
         display: flex;
         justify-content: space-between;
-        margin: 2rem 2rem 2rem 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 2rem 0 2rem 0;
+    &-icon-like{
+        padding-top: 8px;
+    }
     }
 }
 
 .main-menu{
     display: flex;
     flex-direction: column;
-    &__item{
+}
+.menu__type{
+    padding-left: 1rem;
+}
+
+.item{
+    display: flex;
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    margin: 1rem 1rem 1rem 0;
+    height: 4rem;
+    &__name{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        flex: 1;
+        width: 60%;
+        padding-left: 1rem;
+    }
+    &__price{
+        display: flex;
+        padding-top: 1.5rem;
+        margin-left: .5rem;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: $color_tertiary;
+        height: 4rem;
+        width: 4rem;
+        margin-left: 1rem;
     }
 }
+
