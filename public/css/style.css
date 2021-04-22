@@ -1,9 +1,17 @@
 @keyframes icon-spin {
   0% {
-    transform: rotate(-180deg);
+    transform: rotate(-90deg);
   }
   100% {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes translate-x {
+  from {
+    margin-right: -4rem;
+  }
+  to {
+    margin-right: 0rem;
   }
 }
 * {
@@ -354,12 +362,21 @@ a {
   display: flex;
   /*flex-direction: row;*/
   /*flex-wrap: wrap;*/
+  overflow: hidden;
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
   background-color: white;
   margin: 1rem 1rem 1rem 0;
   height: 4rem;
+}
+.item:hover .item__logo i {
+  animation-name: icon-spin;
+  animation-duration: 2s;
+}
+.item:hover .item__logo {
+  animation-name: translate-x;
+  animation-duration: 2s;
 }
 .item__name {
   display: flex;
@@ -383,6 +400,7 @@ a {
   height: 4rem;
   width: 4rem;
   margin-left: 1rem;
+  margin-right: -4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

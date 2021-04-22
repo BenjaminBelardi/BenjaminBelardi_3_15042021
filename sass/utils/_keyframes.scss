@@ -1,8 +1,16 @@
-@keyframes icon-spin {
-	0% {
-		transform: rotate(-180deg);
-	}
-	100% {
-		transform: rotate(90deg);
-	}
-}
+@keyframes icon-spin{
+    0% {
+      transform: rotate(-90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes translate-x{
+      from{
+        margin-right:-4rem;
+      }
+      to{
+          margin-right:0rem;
+      }
+  }
