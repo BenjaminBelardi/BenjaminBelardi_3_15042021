@@ -1,27 +1,43 @@
 .banner__img{
     position: absolute;
-
     height: 260px;
     width: 100%;
     object-fit: cover;
+    @media (min-width: 700px)
+        {
+            height:100%;
+        }
 }
 .menu{
     position: relative;
     top: 220px;
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: $color_bg-menu;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding-bottom: 40px;
+    @media (min-width: 700px)
+        {
+         top: 192px;
+         width:50%;
+         margin: auto;
+        }
     &__restaurant{
         display: flex;
         justify-content: space-between;
         margin-left: 1rem;
         margin-right: 1rem;
         padding: 2rem 0 2rem 0;
-    &-icon-like{
-        padding-top: 8px;
     }
+    &__type{
+        padding-left: 1rem;
+    }
+    &__container{
+        overflow: hidden;
+        &.menu-apparition{
+        max-height: 0;
+        animation: menu-apparition 3s .5s ease-in-out forwards;
+        }
     }
 }
 
@@ -29,14 +45,9 @@
     display: flex;
     flex-direction: column;
 }
-.menu__type{
-    padding-left: 1rem;
-}
 
 .item{
     display: flex;
-    /*flex-direction: row;*/
-    /*flex-wrap: wrap;*/
     overflow: hidden;
     justify-content: space-between;
     align-items: center;
@@ -45,14 +56,11 @@
     margin: 1rem 1rem 1rem 0;
     height: 4rem;
     &:hover .item__logo i{
-        animation-name: icon-spin;
-        animation-duration: 2s;
+        animation: icon-spin 1s .2s forwards;
     }
     &:hover .item__logo{
-        animation-name: translate-x;
-        animation-duration: 2s;
+        animation: translate-x 1s forwards;
     }
-
     &__name{
         display: flex;
         flex-direction: column;

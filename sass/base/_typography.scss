@@ -9,7 +9,7 @@ body {
         color: black;
 }
 
-h1 {
+h1,.spinner__txt {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
@@ -47,15 +47,30 @@ a{
         font-weight: 700;
         color: darken($color_tertiary, 35%);
     }
-    &.icon-like{
-        font-size: 1.5rem;
-    }
 }
 
-.menu__type h3{
+.like{
+    &--size-sm{
+        font-size:1.5rem;
+    }
+    &--size-md{
+        font-size:2rem;
+    }
+
+}
+
+
+.menu__type{
+    & h3{
     text-transform:uppercase;
     font-size: 1rem;
     font-weight: 400;
+    }
+    &--underligne{
+        width:2.5rem;
+        height:0.2rem;
+        background-color: $color_tertiary;
+    }
 }
 
 // .item__name,.item__price{
@@ -98,12 +113,12 @@ a{
     }
 }
 
-.fa-heart:hover{
-    transition: all 1s ease-in-out;
-    -webkit-background-clip: text;
-    background-clip:text;
-    font-weight: 700;
-    background-image: linear-gradient($color_primary,$color_secondary);
-    /*-webkit-text-fill-color: transparent;*/
-    color: transparent;
-  }
+// .fa-heart:hover{
+//     transition: all 1s ease-in-out;
+//     -webkit-background-clip: text;
+//     background-clip:text;
+//     font-weight: 700;
+//     background-image: linear-gradient($color_primary,$color_secondary);
+//     /*-webkit-text-fill-color: transparent;*/
+//     color: transparent;
+//   }

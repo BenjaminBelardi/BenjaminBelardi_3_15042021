@@ -1,0 +1,82 @@
+.spinner{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width : 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 1;
+    z-index: 2;
+    animation:spinner .5s 2s forwards;
+    &__container{
+      display: flex;
+      position: absolute;
+      top: 30%;
+      /*left: 33%;*/
+      width : 110px;
+      height: 110px;
+    }
+    &__txt{
+      display: flex;
+      // position: absolute;
+      // top: 45%;
+      // left: 33%;
+      //width: 140px;
+    }
+
+  }
+  
+  
+.circle-spin{
+    display: flex;
+    /*position: absolute;*/
+    border: 1px solid;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 100%;
+    animation: 2s ease-in-out circle-spin;
+  }
+
+  .circle-1{
+    position: absolute;
+    top: 0;
+    left:0%;
+    width: 110px;
+    height: 110px;
+    border-color: $color_primary;
+    animation-delay: .2s;
+  }
+  .circle-2{
+    position: absolute;
+    top:.7%;
+    left:2.4%;
+    width: 100px;
+    height: 100px;
+    border-color: $color_secondary;
+    animation-delay: .4s;
+    animation-direction: reverse;
+  }
+  .circle-3{
+    position: absolute;
+    top:1.05%;
+    left:4.1%;
+    width: 90px;
+    height: 90px;
+    border-color:$color_primary;
+    animation-delay: .6s;
+  }
+  .circle-4{
+    position: absolute;
+    top:1.4%;
+    left:6.8%;
+    width: 80px;
+    height: 80px;
+    border-color: $color_secondary;
+    animation-delay: .8s;
+    animation-direction: reverse;
+  } 
+ 

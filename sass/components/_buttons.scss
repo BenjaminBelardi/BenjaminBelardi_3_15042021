@@ -2,7 +2,7 @@
     padding: 1rem;
     border: unset;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem $color_shadow ;
+    box-shadow: .1rem .1rem .2rem $color_shadow ;
     background: linear-gradient(175deg,$color_secondary,$color_primary);
     color: white;
     outline: none;
@@ -10,5 +10,58 @@
     &--order{
         width: 50%;
     }
+    &:hover{
+        transform: scale(1.1);
+        filter: brightness(1.1);
+        box-shadow: .2rem .2rem .5rem darken($color_shadow, 20%);
+    }
 }
 
+.btn__like{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    background-color: black;
+    &--menu-layout{
+        position: absolute;
+        top:2rem;
+        left:19.5rem;
+    }
+    &:hover
+    {
+    transition:opacity .5s;
+    opacity: 1;
+    background: linear-gradient(#9356DC, #FF79DA);
+    }
+    &:active
+    {
+        opacity: 1;
+        background: linear-gradient(#9356DC, #FF79DA);
+    }
+}
+
+.like{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    mix-blend-mode: lighten;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--menu-bg-color{
+        background-color: $color_bg-menu;
+    }
+    &--nobg:hover{
+        transition: opacity 1s;
+        opacity: 0;
+    }
+    &--nobg:active{
+        opacity: 0;
+    }
+
+}
