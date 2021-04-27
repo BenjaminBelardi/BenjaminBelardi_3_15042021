@@ -20,26 +20,28 @@
     }
     &__subtitle{
         margin: 0.5rem 2rem 0.5rem 2rem;
-        font-size: 0.8rem;
     }
 }
 .instructions{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 5.4rem;
-    &__title{
-        margin: 0.4rem;
-    }
+    margin: 5.4rem 1.25rem 1.25rem 1.25rem;
+    // &__title{
+    //     margin: 0.4rem;
+    // }
     &__box{
         display: flex;
         flex-direction: row;
         width: 100%;
         border-radius: 1.8rem;
         background-color: #f6f6f6;
-        margin: .5rem 1.25rem .5rem 2rem;
+        margin: 1rem 0 0 .75rem;
         height: 5rem;
         align-items: center;
+        &:hover{
+            background-color: $color_primary-light;
+        }
     }
     &__stage{
         display: flex;
@@ -49,15 +51,11 @@
         width: 25px;
         border-radius: 50%;
         background-color: $color_primary;
-        
-        color: white;
-        font-size: 0.8rem;
         align-items: center;
         justify-content: center;
     }
     &__label{
          margin-left: 1.2rem;
-         
         }
     &__icon{
         color: gray;

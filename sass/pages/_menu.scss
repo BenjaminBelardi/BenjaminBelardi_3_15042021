@@ -19,7 +19,7 @@
     @media (min-width: 700px)
         {
          top: 192px;
-         width:50%;
+         width:60%;
          margin: auto;
         }
     &__restaurant{
@@ -40,12 +40,10 @@
         }
     }
 }
-
 .main-menu{
     display: flex;
     flex-direction: column;
 }
-
 .item{
     display: flex;
     overflow: hidden;
@@ -64,7 +62,7 @@
     &__name{
         display: flex;
         flex-direction: column;
-        flex: 1;
+        flex: 1 1 auto;
         width: 60%;
         padding-left: 1rem;
     }

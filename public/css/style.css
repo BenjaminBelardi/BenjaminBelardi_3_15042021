@@ -16,7 +16,7 @@
 }
 @keyframes circle-spin {
   from {
-    transfrom: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
@@ -63,14 +63,14 @@ body {
   color: black;
 }
 
-h1, .spinner__txt {
+.main-title, .spinner__txt, .instructions__title, .restaurant__list-title {
   font-family: "Shrikhand", sans-serif;
   font-weight: 100;
   font-size: 1.5rem;
   color: black;
 }
 
-h2 {
+.sub-title {
   font-family: "Shrikhand", sans-serif;
   font-weight: 100;
   font-size: 0.9rem;
@@ -78,13 +78,18 @@ h2 {
 }
 
 button {
-  font-family: "Roboto", sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
   font-weight: 400;
   font-size: 1rem;
 }
 
 a {
   text-decoration: none;
+}
+
+.instruction__stage {
+  color: white;
+  font-size: 0.8rem;
 }
 
 .restaurant__card__name {
@@ -411,17 +416,13 @@ a {
 }
 .search-result__subtitle {
   margin: 0.5rem 2rem 0.5rem 2rem;
-  font-size: 0.8rem;
 }
 
 .instructions {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 5.4rem;
-}
-.instructions__title {
-  margin: 0.4rem;
+  margin: 5.4rem 1.25rem 1.25rem 1.25rem;
 }
 .instructions__box {
   display: flex;
@@ -429,9 +430,12 @@ a {
   width: 100%;
   border-radius: 1.8rem;
   background-color: #f6f6f6;
-  margin: 0.5rem 1.25rem 0.5rem 2rem;
+  margin: 1rem 0 0 0.75rem;
   height: 5rem;
   align-items: center;
+}
+.instructions__box:hover {
+  background-color: #f5edff;
 }
 .instructions__stage {
   display: flex;
@@ -441,8 +445,6 @@ a {
   width: 25px;
   border-radius: 50%;
   background-color: #9356DC;
-  color: white;
-  font-size: 0.8rem;
   align-items: center;
   justify-content: center;
 }
@@ -533,7 +535,7 @@ a {
 @media (min-width: 700px) {
   .menu {
     top: 192px;
-    width: 50%;
+    width: 60%;
     margin: auto;
   }
 }
@@ -579,7 +581,7 @@ a {
 .item__name {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 1 auto;
   width: 60%;
   padding-left: 1rem;
 }

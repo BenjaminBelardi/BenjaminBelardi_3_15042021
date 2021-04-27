@@ -9,27 +9,33 @@ body {
         color: black;
 }
 
-h1,.spinner__txt {
+.main-title,.spinner__txt,.instructions__title,.restaurant__list-title{
     font-family: 'Shrikhand', sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
     color:black;
 }
-h2 {
+.sub-title {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: .9rem;
     color:grey;
 }
 
 button {
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     font-weight: 400;
     font-size: 1rem;
 }
 a{
     text-decoration: none;
 }
+
+.instruction__stage{
+    color: white;
+    font-size: 0.8rem; 
+}
+
 .restaurant__card{
     &__name{
         font-size: 1.1rem;
@@ -58,7 +64,6 @@ a{
     }
 
 }
-
 
 .menu__type{
     & h3{
