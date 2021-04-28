@@ -27,9 +27,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 5.4rem 1.25rem 1.25rem 1.25rem;
-    // &__title{
-    //     margin: 0.4rem;
-    // }
     &__box{
         display: flex;
         flex-direction: row;
@@ -41,6 +38,9 @@
         align-items: center;
         &:hover{
             background-color: $color_primary-light;
+            & .instructions__icon{
+                color: $color_primary;
+            }
         }
     }
     &__stage{
@@ -61,7 +61,6 @@
         color: gray;
     }
 }
-
 .restaurant{
     display:flex;
     flex-direction: column;
@@ -113,7 +112,6 @@
             z-index: 1;
             border-radius: 2px;
             background-color: $color_tertiary;
-
         }
     }
 }

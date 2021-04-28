@@ -23,13 +23,13 @@
     right: 1rem;
     display: flex;
     align-items: center;
-    height: 2rem;
-    width: 2rem;
+    height: 2.1rem;
+    width: 2.1rem;
     background-color: black;
     &--menu-layout{
         position: absolute;
         top:2rem;
-        left:19.5rem;
+        /*left:19.5rem;*/
     }
     &:hover
     {
