@@ -1,0 +1,117 @@
+
+.search{
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#eaeaea ;
+    padding: 0.5rem;
+    &__icon{
+        margin-right: .5rem;
+    }
+}
+.search-result{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:2rem;
+    &__title{
+        margin: 0 2rem 0.5rem 2rem;
+    }
+    &__subtitle{
+        margin: 0.5rem 2rem 0.5rem 2rem;
+    }
+}
+.instructions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5.4rem 1.25rem 1.25rem 1.25rem;
+    &__box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 1.8rem;
+        background-color: #f6f6f6;
+        margin: 1rem 0 0 .75rem;
+        height: 5rem;
+        align-items: center;
+        &:hover{
+            background-color: $color_primary-light;
+            & .instructions__icon{
+                color: $color_primary;
+            }
+        }
+    }
+    &__stage{
+        display: flex;
+        position: relative;
+        left:-10px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: $color_primary;
+        align-items: center;
+        justify-content: center;
+    }
+    &__label{
+         margin-left: 1.2rem;
+        }
+    &__icon{
+        color: gray;
+    }
+}
+.restaurant{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.25rem;
+    &__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card{
+        display: flex;
+        position: relative;
+        height: 15.5rem;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 0 16px #dedede;
+        margin-top: 1rem;
+        width: 100%;
+        @media (min-width: 700px)
+        {
+        max-width: 49%;
+        width: 49%;
+        }
+        &__txt{
+            margin: 1rem;
+        }
+        & a{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        & a img{
+            height: 70%;
+            width: 100%;
+            object-fit:cover;
+            border-top-left-radius: 0.8rem;
+            border-top-right-radius: 0.8rem;
+        }
+        &__new{
+            position:absolute;
+            top:15px;
+            right: 15px;
+            width: 4rem;
+            padding: 0.4rem;
+            text-align: center;
+            z-index: 1;
+            border-radius: 2px;
+            background-color: $color_tertiary;
+        }
+    }
+}

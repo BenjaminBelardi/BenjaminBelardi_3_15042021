@@ -1,0 +1,42 @@
+@keyframes icon-spin{
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes translate-x{
+  from{
+    margin-right:-4rem;
+  }
+  to{
+    margin-right:0rem;
+  }
+}
+@keyframes circle-spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity:0;
+    z-index: -1;
+    display: none;
+  }
+}
+@keyframes menu-apparition{
+  0%{
+   max-height: 0;
+  }
+  100%{
+   max-height: 50rem;
+  }
+} 

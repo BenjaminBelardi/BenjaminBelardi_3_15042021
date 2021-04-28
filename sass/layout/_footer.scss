@@ -1,0 +1,51 @@
+.footer-main{
+    background-color: $color_footer;
+    height: 12.5rem;
+    &.footer-position{
+        position: relative;
+        top: 220px;
+        @media (min-width: 700px)
+        {
+        top: 192px; 
+        }
+    }
+    @media (min-width: 700px)
+        {
+        top: 192px; 
+        height: 8rem;
+        }
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.25rem;
+    @media (min-width: 700px)
+        {
+         align-items: center;
+        }
+    &__logo{
+        margin-bottom: -0.2rem;
+    }
+    &__link-container{
+        margin-top: 1rem;
+        display: block;
+        @media (min-width: 700px)
+        {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         width: 90%;
+        }
+    }
+    &__link{
+        margin-top: 0.5rem;
+        &__icon-cutlery,&__icon-partner{
+            margin-right: 0.5rem;
+        }
+        @media (min-width: 700px)
+        {
+         display: flex;
+        }
+    }
+}

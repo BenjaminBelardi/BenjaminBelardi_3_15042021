@@ -1,0 +1,88 @@
+.banner__img{
+    position: absolute;
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    @media (min-width: 700px)
+        {
+            height:100%;
+        }
+}
+
+.menu{
+    position: relative;
+    top: 220px;
+    width: 100%;
+    background-color: $color_bg-menu;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-bottom: 40px;
+    @media (min-width: 700px)
+        {
+         top: 192px;
+         width:60%;
+         margin: auto;
+        }
+    &__restaurant{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 2rem 0 2rem 0;
+    }
+    &__type{
+        padding-left: 1rem;
+    }
+    &__container{
+        overflow: hidden;
+        &.menu-apparition{
+        max-height: 0;
+        animation: menu-apparition 3s .5s ease-in-out forwards;
+        }
+    }
+}
+.main-menu{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    margin: 1rem 1rem 1rem 0;
+    height: 4rem;
+    &:hover .item__logo i{
+        animation: icon-spin 1s .2s forwards;
+    }
+    &:hover .item__logo{
+        animation: translate-x 1s forwards;
+    }
+    &__name{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        width: 60%;
+        padding-left: 1rem;
+    }
+    &__price{
+        display: flex;
+        padding-top: 1.5rem;
+        margin-left: .5rem;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: $color_tertiary;
+        height: 4rem;
+        width: 4rem;
+        margin-left: 1rem;
+        margin-right: -4rem;
+    }
+}
+

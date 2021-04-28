@@ -1,2 +1,11 @@
 @import "./utils/variables";
-@import "./pages/acceuil";
+@import "./utils/keyframes";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/inputs";
+@import "./components/buttons";
+@import "./layout/header";
+@import"./layout/footer";
+@import"./layout/spinner";
+@import "./pages/accueil";
+@import "./pages/menu";
