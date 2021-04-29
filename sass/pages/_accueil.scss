@@ -27,6 +27,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 5.4rem 1.25rem 1.25rem 1.25rem;
+    @media (min-width: 900px)
+    {
+        justify-content: space-between;
+    }
+    &__title{
+        @media (min-width: 900px){
+            width: 100%;
+        }
+    }
     &__box{
         display: flex;
         flex-direction: row;
@@ -36,6 +45,10 @@
         margin: 1rem 0 0 .75rem;
         height: 5rem;
         align-items: center;
+        @media (min-width: 900px)
+        {
+            flex-basis: 31%;
+        }
         &:hover{
             background-color: $color_primary-light;
             & .instructions__icon{
