@@ -6,20 +6,24 @@ body {
     font-size: 1rem;
     font-weight: 400;
 }
+.main-title,.instructions__title,.restaurant__list-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 .header__return{
         color: black;
 }
 
-.main-title,.spinner__txt,.instructions__title,.restaurant__list-title{
+.spinner__txt{
     font-family: 'Shrikhand', sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
     color:black;
 }
 .sub-title {
-    font-family: 'Shrikhand', sans-serif;
-    font-weight: 100;
-    font-size: .9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
     color:grey;
 }
 
