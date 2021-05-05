@@ -6,7 +6,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
 }
-.main-title,.instructions__title,.restaurant__list-title{
+.instructions__title,.restaurant__list-title{
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -14,7 +14,7 @@ body {
         color: black;
 }
 
-.spinner__txt{
+.menu__restaurant__title,.spinner__txt{
     font-family: 'Shrikhand', sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
@@ -85,13 +85,6 @@ a{
         background-color: $color_tertiary;
     }
 }
-
-// .item__name,.item__price{
-//     font-family: 'Roboto', sans-serif;
-// }
-// .menu*{
-//     font-family: 'Roboto', sans-serif;
-// }
 .item{
     &__tle{
         font-size: 1.1rem;
@@ -125,13 +118,3 @@ a{
         color: white;
     }
 }
-
-// .fa-heart:hover{
-//     transition: all 1s ease-in-out;
-//     -webkit-background-clip: text;
-//     background-clip:text;
-//     font-weight: 700;
-//     background-image: linear-gradient($color_primary,$color_secondary);
-//     /*-webkit-text-fill-color: transparent;*/
-//     color: transparent;
-//   }

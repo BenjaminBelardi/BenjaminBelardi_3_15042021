@@ -34,6 +34,7 @@
             margin-bottom: 0;
         }
     &__link-container{
+        list-style-type: none;
         margin-top: 1rem;
         display: block;
         @media (min-width: 700px)
